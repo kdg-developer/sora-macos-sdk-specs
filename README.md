@@ -1,4 +1,4 @@
-# Sora macOS SDK CocoaPod Specs
+# [Unofficial] Sora macOS SDK CocoaPod Specs
 
 WebRTC SFU Sora macOS SDK 用の **非公式な** CocoaPod Specs リポジトリです。
 趣味で使っているだけなので、サポート等々はありません。ご了承ください。
