@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    WebRTC library for WebRTC SFU Sora
                    DESC
-  s.homepage     = "https://github.com/shiguredo/shiguredo-webrtc-ios"
+  s.homepage     = "https://github.com/soudegesu/webrtc-build"
   s.license      = { :type => "BSD" }
   s.authors      = { "WebRTC" => "http://www.webrtc.org",
                      "Shiguredo Inc." => "sora@shiguredo.jp" }
