@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.authors      = { "WebRTC" => "http://www.webrtc.org",
                      "Shiguredo Inc." => "sora@shiguredo.jp" }
   s.platform     = :osx, "10.10"
-  s.source       = { :http => "https://github.com/soudegesu/sora-macos-sdk-specs/releases/download/#{s.name}-#{s.version}/WebRTC.framework.zip" }
+  s.source       = { :http => "https://github.com/soudegesu/sora-macos-sdk-specs/releases/download/#{s.name}-#{s.version}/WebRTC-test.framework.zip" }
   s.source_files  = "WebRTC.framework/Headers/*.h"
   s.vendored_frameworks = "WebRTC.framework"
 end
