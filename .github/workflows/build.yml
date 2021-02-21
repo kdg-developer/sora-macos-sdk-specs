@@ -1,0 +1,56 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Build universal macOS SDK'
+        # Default value if no value is explicitly provided
+        default: 'World'
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Select Xcode Version
+      run: sudo xcode-select -s '/Applications/Xcode_11.2.app/Contents/Developer'
+    - name: Show Xcode Version
+      run: xcodebuild -version
+# TBD
+#     - name: Download x86 artifacts
+#       run: |
+#         curl 
+#     - name: Download arm64 artifacts
+#       run: |
+#     - name: Build universal framework
+#       run: |
+#         set -o pipefail && \
+#           xcodebuild -create-xcframework \
+#             -framework \
+#             -framework \
+#             -output out/WebRTC.xcframework
+#     - name: Upload Framework
+#       uses: actions/upload-artifact@v1
+#       with:
+#         name: Sora
+#         path: ./build/Build/Products/Release-iphoneos/Sora.framework
+#   release:
+#     if: contains(github.ref, 'tags/v')
+#     needs: [build]
+#     runs-on: macOS-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@master
+#     - name: Create Release
+#       id: create_release
+#       uses: actions/create-release@v1.0.0
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       with:
+#         tag_name: ${{ github.ref }}
+#         release_name: Release ${{ github.ref }}
+#         draft: false
+#         prerelease: false
