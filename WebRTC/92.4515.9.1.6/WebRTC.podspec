@@ -14,9 +14,4 @@ Pod::Spec.new do |s|
   s.source       = { :http => "https://github.com/soudegesu/sora-macos-sdk-specs/releases/download/#{s.name}-#{s.version}/WebRTC.framework.zip" }
   s.source_files  = "WebRTC.framework/Headers/*.h"
   s.vendored_frameworks = "WebRTC.framework"
-
-  s.subspec 'dsyms' do |fs|
-    fs.source = { :http => "https://github.com/soudegesu/sora-macos-sdk-specs/releases/download/#{s.name}-#{s.version}/WebRTC.framework.dSYM.zip" }
-    fs.vendored_frameworks = "WebRTC.framework.dSYM"
-  end
 end
