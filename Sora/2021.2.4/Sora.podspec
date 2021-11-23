@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   }
   s.source_files  = "Sora/**/*.swift"
   s.resources = []
-  s.dependency "WebRTC", '96.4664.2.0.0'
+  s.dependency "WebRTC", '96.4664.2.0.1'
   s.dependency "Starscream", "4.0.4"
 end

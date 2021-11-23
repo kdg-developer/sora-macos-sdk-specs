@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.9.0'
   s.name         = "WebRTC"
-  s.version      = "96.4664.2.0.0"
+  s.version      = "96.4664.2.0.1"
   s.summary      = "WebRTC library for WebRTC SFU Sora"
   s.description  = <<-DESC
                    WebRTC library for WebRTC SFU Sora
