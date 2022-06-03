@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    A library to develop Sora client applications.
                    DESC
-  s.homepage     = "https://github.com/soudegesu/sora-macos-sdk"
+  s.homepage     = "https://github.com/kdg-developer/sora-macos-sdk"
   s.license      = { :type => "Apache License, Version 2.0" }
   s.authors      = { "Shiguredo Inc." => "sora@shiguredo.jp",
-                      "soudegesu" => "" }
+                      "kdg-developer" => "" }
   s.platform     = :osx, "10.15"
   s.source       = {
-      :git => "https://github.com/soudegesu/sora-macos-sdk.git",
+      :git => "https://github.com/kdg-developer/sora-macos-sdk.git",
       :tag => s.version
   }
   s.source_files  = "Sora/**/*.swift"
